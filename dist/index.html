@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IFrame Microfrontend Shell</title>
+    <style>
+      body,
+      html {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        padding: 0;
+        margin: 0;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe
+      id="mf-angular"
+      src="http://localhost:4200/"
+      title="Angular Microfrontend"
+    ></iframe>
+    <iframe
+      id="mf-react"
+      src="http://localhost:3002/"
+      title="React Microfrontend"
+    ></iframe>
+    <script src="main.js"></script>
+  </body>
+</html>
